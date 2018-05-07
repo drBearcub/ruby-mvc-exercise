@@ -41,6 +41,11 @@ class Product
 	def self.find_by_id(id)
 	  self.all.select { |product| product.id == id.to_i }.first
 	end
+
+	def self.under(limit)
+	  self.all.select { |product| product.price < limit }
+	end
+	
 	attr_reader :location
 	attr_reader :id
 	attr_reader :url

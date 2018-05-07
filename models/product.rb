@@ -44,5 +44,6 @@ class Product
 	attr_reader :location
 	attr_reader :id
 	attr_reader :url
+	attr_reader :title
 
 end

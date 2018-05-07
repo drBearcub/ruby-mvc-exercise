@@ -17,6 +17,8 @@ end
 
 get '/products' do
    # Team Page
+  load "models/product.rb"
+  @products = Product.sample_locations
   @page_title = "All Products"
   erb :products
 end

@@ -4,10 +4,10 @@
 
 
   <% @products.each do |product| %>
-  <a href='/products/location/<%= product['location'] %>'>
+  <a href='/products/location/<%= product.location %>'>
   <div class='product'>
     <div class='thumb'>
-      <img src='<%= product['url'] %>' />
+      <img src='<%= product.url %>' />
     </div>
     <div class='caption'>
       <%= product.location != 'us' ? product.location.capitalize : product.location.upcase %>
@@ -17,4 +17,4 @@
   <% end %>
 
   </div>
-</div>
+

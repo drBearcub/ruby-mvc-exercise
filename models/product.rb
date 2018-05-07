@@ -1,4 +1,4 @@
-# product.rb
+	# product.rb
 
 require 'HTTParty'
 require 'json'
@@ -43,5 +43,6 @@ class Product
 	end
 	attr_reader :location
 	attr_reader :id
+	attr_reader :url
 
 end

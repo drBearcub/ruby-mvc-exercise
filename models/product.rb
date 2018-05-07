@@ -45,5 +45,8 @@ class Product
 	attr_reader :id
 	attr_reader :url
 	attr_reader :title
+	attr_reader :price
+	attr_reader :summary
+
 
 end
